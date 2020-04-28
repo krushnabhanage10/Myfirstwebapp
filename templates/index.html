@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My first Webapp</title>
+</head>
+<body>
+<h1>Welcome to passage analyzer</h1>
+<br></br>
+<a href="{% url 'result' %}"></a>
+<form action="{%  url 'result' %}">
+    {%  csrf_token %}
+    <textarea cols="60" rows="10" name="article">Enter Here</textarea>
+    <br></br>
+    <input type="submit" value="Check results">
+
+
+</form>
+<br></br>
+
+</body>
+</html>
